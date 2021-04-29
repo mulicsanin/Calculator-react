@@ -6,7 +6,7 @@ import Total from './Total';
 import CalcButtons from './CalcButtons';
 
 import update from 'immutability-helper';
-import { evaluate, format } from 'mathjs';
+import { evaluate, format, string } from 'mathjs';
 
 class App extends React.Component {
   state = {
@@ -77,6 +77,7 @@ class App extends React.Component {
       result = String(result);
       this.setState({
         total: result,
+        midCount: [result],
       });
     }
   };
