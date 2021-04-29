@@ -1,0 +1,158 @@
+import React from 'react';
+
+import Button from './Button';
+
+class CalcButtons extends React.Component {
+  render() {
+    return (
+      <div className='calcButtons' style={{ background: `${this.props.pad}` }}>
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='clear'
+          character='AC'
+          clr='#39f2d3'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='--'
+          character='+/_'
+          clr='#39f2d3'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='%'
+          character='%'
+          clr='#39f2d3'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='/'
+          character='÷'
+          clr='#e79098'
+        />
+
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='7'
+          character='7'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='8'
+          character='8'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='9'
+          character='9'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='*'
+          character='x'
+          clr='#e79098'
+        />
+
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='4'
+          character='4'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='5'
+          character='5'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='6'
+          character='6'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='-'
+          character='-'
+          clr='#e79098'
+        />
+
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='1'
+          character='1'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='2'
+          character='2'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='3'
+          character='3'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='+'
+          character='+'
+          clr='#e79098'
+        />
+
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='back'
+          character='<-'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='0'
+          character='0'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='.'
+          character='.'
+          clr='#bdc1cc'
+        />
+        <Button
+          onClick={this.props.onClick}
+          btns={this.props.btns}
+          value='equal'
+          character='='
+          clr='#e79098'
+        />
+      </div>
+    );
+  }
+}
+
+export default CalcButtons;

@@ -1,0 +1,61 @@
+@import '../node_modules/bulma/bulma.sass';
+
+@import './scss/theme';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.calculator {
+  width: 370px;
+  max-height: 800px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(45, 49, 60);
+  overflow: hidden;
+}
+
+.middleCount {
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  margin: 0px 30px;
+}
+
+.total {
+  margin: 0px 25px;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  text-align: right;
+}
+
+.calcButtons {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 70px);
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.btn {
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
