@@ -6,7 +6,7 @@ import Total from './Total';
 import CalcButtons from './CalcButtons';
 
 import update from 'immutability-helper';
-import { evaluate, format, string } from 'mathjs';
+import { evaluate, format } from 'mathjs';
 
 class App extends React.Component {
   state = {
